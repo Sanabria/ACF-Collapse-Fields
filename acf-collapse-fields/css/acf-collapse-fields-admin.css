@@ -1,16 +1,21 @@
 /* Expand / Collapse Buttons */
 .field-repeater-toggle-all,
 .field-flexible-toggle {
+	position: relative;
 	float:right;
-	margin: -5px 0 0 !important;
+	display: flex;
+	align-items: center;
+    	z-index: 10;
+    	line-height: 1.4;
+    	margin-bottom: 1em !important;
 }
 
 .field-repeater-toggle::before,
 .field-flexible-toggle::before {
-	content: "\f506";
+	content: "\f189";
 	display: inline;
 	-webkit-font-smoothing: antialiased;
-	font: normal 20px/1 'dashicons';
+	font: normal 20px/0.8 'dashicons';
 	vertical-align: text-bottom;
 	color: #777;
 	margin: 3px 5px 0 0;
@@ -18,5 +23,5 @@
 
 .field-repeater-toggle-all.collapsed-row::before,
 .field-flexible-toggle-all.collapsed-row::before {
-	content: "\f211";
+	content: "\f188";
 }
